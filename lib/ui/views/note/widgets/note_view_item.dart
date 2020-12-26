@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mynote/ui/views/note/note_model.dart';
 import 'package:mynote/ui/views/note/note_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
@@ -15,8 +14,7 @@ class NoteViewItem extends ViewModelWidget<NoteViewModel> {
         ),
         actions: [
           IconButton(
-              icon: Icon(Icons.edit),
-              onPressed: () => model.updateItem())
+              icon: Icon(Icons.edit), onPressed: () => model.updateItem())
         ],
       ),
       body: Center(
