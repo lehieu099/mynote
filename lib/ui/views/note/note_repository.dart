@@ -1,6 +1,5 @@
 import 'package:mynote/repostory/local_repository.dart';
 import 'package:mynote/repostory/repository.dart';
-
 import 'note_model.dart';
 
 class NoteRepository implements Repository<Note> {
