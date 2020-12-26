@@ -5,7 +5,18 @@ Xây dựng ứng dụng Note
 ## Bắt đầu
 
 ### file local_repository.dart
-Xay dung
+* Xây dựng một hàm tạo
+  ```
+  LocalRepository._internal();
+  ```
+* Lưu bộ nhớ cache để không phải tạo nhiều đối tượng
+  ``` static final _cache = <String, LocalRepository>{};
+  ```
+* Tạo một getter để lấy ra chính nó
+  ```
+  static LocalRepository get instance => _cache.putIfAbsent(
+      'LocalPersistence', () => LocalRepository._internal()
+    ```
 
 
 
